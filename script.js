@@ -1,5 +1,5 @@
 var maindiv = document.createElement('div');
-maindiv.classList.add("container",'text-center' );
+maindiv.classList.add('container-fluid','text-center','my-0' );
 document.body.append(maindiv);
 
 var header = document.createElement('h1');
@@ -31,11 +31,11 @@ async function api(){
 
 
         var cols = document.createElement('div');
-        cols.classList.add("col-md-4","col-sm-6");
+        cols.classList.add("col-lg-3","col-md-6",);
         rows.append(cols);
     
         var cards = document.createElement('div');
-        cards.classList.add("card","hg");
+        cards.classList.add("card","hg","my-3");
         cols.append(cards);
         
     
@@ -50,7 +50,7 @@ async function api(){
     
         var image = document.createElement('img');
         image.setAttribute('src',`${i.flags.png}`);
-        image.classList.add('mb-5' , "img-fluid");
+        image.classList.add('mb-5',"img-fluid");
         cardbody.append(image);
     
         let arr = [`Capital : ${i.capital}`,`Region : ${i.region}`,`Country Code: ${i.cioc}`];
